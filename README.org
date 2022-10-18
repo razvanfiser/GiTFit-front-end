@@ -1,0 +1,34 @@
+#+TITLE: PBL DAS Gymbook
+#+AUTHOR: FCIM FAF-20
+#+DESCRIPTION: A Better Gym App
+
+** TABLE OF CONTENTS :toc:
+  - [[#introduction][INTRODUCTION]]
+  - [[#implementation][IMPLEMENTATION]]
+  - [[#contributors][CONTRIBUTORS]]
+  - [[#contact][CONTACT]]
+
+** INTRODUCTION
+
+The current repository represents our work for the =DAS= course at =TUM=, supervised by =SaltEdge=.
+
+*** PROBLEM OVERVIEW
+*** SOLUTION
+
+** IMPLEMENTATION
+
+*** TECHNOLOGIES
+
+** CONTRIBUTORS
+
+- [[https://github.com/AndreeaCvl][AndreeaCvl]]
+- [[https://github.com/IuraCPersonal][IuraCPersonal]]
+- [[https://github.com/razvanfiser][razvanfiser]]
+- [[https://github.com/liviumocanup][liviumocanup]]
+- [[https://github.com/MoiseiLiviu][MoiseiLiviu]]
+
+** CONTACT
+
+    If you have any questions, please contact us on any of the following emails:
+     - iurie.cius@isa.utm.md
+     - andreea.covalevschi@isa.utm.md
