@@ -9,11 +9,11 @@ import {
   NavBtnLink,
 } from './navbarElements';
   
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   return (
     <>
       <Nav>
-        <Bars />
+        <Bars onClick={toggle}/>
         <NavLogo to='/about'>GiTFit</NavLogo>
         <NavMenu>
           <NavLink to='/about' activeStyle>
