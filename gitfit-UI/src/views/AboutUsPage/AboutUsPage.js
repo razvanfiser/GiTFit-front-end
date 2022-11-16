@@ -1,9 +1,12 @@
 import React , {useState} from "react";
-import './aboutUs.css';
 import { BrowserRouter as Router} from "react-router-dom";
+import './aboutUs.css';
+
+
 
 import Navbar from "../../components/Navbar/navbar";
 import Sidebar from "../../components/Sidebar/sidebar";
+import AboutUsElement from "../../components/AboutUs/aboutUs2"
 
 export default function AboutUsPage() {
 
@@ -20,13 +23,7 @@ export default function AboutUsPage() {
   return (
     <div>
       <div>
-        <Router>
-          <Sidebar isOpen={isOpen} toggle={toggle}/>
-          <Navbar toggle={toggle}/>
-        </Router>
-        <button type="button" onClick={handleClick}>
-         Click Me
-        </button>
+        <AboutUsElement/>
       </div>
     </div>
   );

@@ -12,9 +12,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/about-us" component={AboutUsPage} />
+      <Route path="/about" component={AboutUsPage} />
       <Route path="/" component={AboutUsPage} />
-      <Route path="/new" component={AboutUsPage} />
     </Switch>
   </Router>,
 );
