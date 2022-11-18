@@ -1,58 +1,50 @@
 import React , {useState} from "react";
-import Video from '../../assets/video/video.mp4'
 import { BrowserRouter as Router} from "react-router-dom";
+import './aboutUs.css';
+import RunningImage from "../../assets/img/runningathletegradient.jpg"
+import postImage1 from "../../assets/img/postimage1.jpg"
+import postImage2 from "../../assets/img/postimage2.jpg"
+import postImage3 from "../../assets/img/postimage3.jpg"
 
-import {
-    HomeContainer,
-    HomeBg,
-    VideoBg, 
-    HomeContent,
-    HomeH1,
-    HomeP,
-    HomeBtnWrap,
-    HomeRoute,
-    HomeA,
-    ArrowForward,
-    ArrowRight
-} from './aboutUs2Elements'
-
-import Navbar from "../Navbar/navbar";
-import Sidebar from "../Sidebar/sidebar";
 
 export default function AboutUsElement() {
-
-  const[isOpen, setIsOpen] = useState(false);
-  const [hover, setHover] = useState(false);
-
-  const onHover =() => {
-    setHover(!hover)
-  }
-
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  }
-
   return (
+
     <div>
-      <div>
-        <HomeContainer>
-            <HomeBg>
-                {/*<VideoBg autoPlay loop muted src={Video} type='video/mp4'/>*/}
-            </HomeBg>
-            <HomeContent>
-                <HomeH1>GiTFit</HomeH1>
-                <HomeP>
-                    Lorem ipsum dolor sit amet. Et corrupti voluptatem et minima aliquam aut accusamus galisum ab placeat 
-                    excepturi qui minus provident a enim quam. Est blanditiis omnis ea libero placeat ab provident dolor 
-                    hic accusamus consequatur. Ea iusto quasi ut quia dolor et galisum dolore eos quos explicabo sit dicta 
-                    odit est inventore aliquam!
-                </HomeP>
-                <HomeBtnWrap>
-                    <HomeRoute to = "/register">Register</HomeRoute>
-                </HomeBtnWrap>
-                <HomeA style = {{color: "blue", top: "0px"}} to = "/login">Already have an account? log-in!</HomeA>
-            </HomeContent>
-        </HomeContainer>
+      <div class="wrapper">
+      <div class="box headerGrid">
+        <img className="homeScreenImage" src={RunningImage} alt="Running Athlete"/>
+        <div class="box headerText">
+          <h1>Start Giting Fit now and keep track of your goals</h1>
+        </div> </div>
+      <div class="box blog"><h1>Newsletter</h1></div>
+      <div class="box content">
+        <div class = "box postGrid">
+          <div class = "postImage"><img className="postImage" src={postImage1} alt="doing nothing"/></div>
+          <div class = "postTitle">Not Doing Anything All Day Makes You Fat - Study Shows</div>
+        </div>
+        <div class = "box postGrid">
+          <div class = "postImage"><img className="postImage" src={postImage2} alt="getting bigger"/></div>
+          <div class = "postTitle">We're Sizing Up! Important Update Coming This December</div>
+        </div>
+        <div class = "box postGrid">
+          <div class = "postImage"><img className="postImage" src={postImage3} alt="arnold"/></div>
+          <div class = "postTitle">Fitness Legend Endorses GiTFit: "I wish I had this back in my day"</div>
+        </div>
+      </div>
+        <div class="box footer">
+          <div class ="box footerTitle"><h1>Keep in touch</h1></div>
+          <div class = "footerContent">
+            <div class = "footerIcon"> O</div>
+            <div class = "footerContactName">Give Us A Call</div>
+            <div class = "footerContactData">+373 699 999 99</div>
+          </div>
+          <div class = "footerContent">
+            <div class = "footerIcon"> Q</div>
+            <div class = "footerContactName">Write Us An Email</div>
+            <div class = "footerContactData">alma.lawson@example.com</div>
+          </div>
+        </div>
       </div>
     </div>
   );
