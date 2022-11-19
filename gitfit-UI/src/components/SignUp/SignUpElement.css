@@ -1,0 +1,22 @@
+.wrapper {
+    display: grid;
+    /*grid-gap: 10px;*/
+    grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+    /*grid-template-rows: repeat(4, [row] auto  );*/
+    grid-template-rows: 550px 150px 680px 220px;
+    background-color: #0b2027;
+    color: #444;
+}
+
+.box {
+    background-color: #0b2027;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.box .box {
+    background-color: transparent;
+    color: #fff;
+}

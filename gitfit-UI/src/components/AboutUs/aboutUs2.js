@@ -17,7 +17,7 @@ export default function AboutUsElement() {
       <div class="box headerGrid">
         <img className="homeScreenImage" draggable="false" src={RunningImage} alt="Running Athlete"/>
         <div class="box headerText">
-          <h1>Start Gitting Fit now and keep track of your goals</h1>
+          <h1 style = {{fontSize: "50px"}}>Start Gitting Fit now and keep track of your goals</h1>
         </div> </div>
       <div class="box blog"><h1>Newsletter</h1></div>
       <div class="box content">
@@ -35,7 +35,7 @@ export default function AboutUsElement() {
         </div>
       </div>
         <div class="box footer">
-          <div class ="box footerTitle"><h1>Keep in touch</h1></div>
+          <div class ="box footerTitle"><h1 style={{fontSize: "40px"}}>Keep in touch</h1></div>
           <div class = "footerContent">
             <div class = "footerIcon">  <IoCall style = {{height: "2em", width: "1.5em"}}/></div>
             <div class = "footerContactName">Give Us A Call</div>

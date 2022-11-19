@@ -1,4 +1,5 @@
 import React from 'react';
+import {useHistory} from 'react-router-dom';
 import {
   Nav,
   NavLogo,
@@ -10,6 +11,13 @@ import {
 } from './navbarElements';
   
 const Navbar = ({toggle}) => {
+
+let history = useHistory();
+
+const redirectSignUpPage = () => {
+  history.push('/sign-up')
+}
+
   return (
     <>
       <Nav>
@@ -32,7 +40,7 @@ const Navbar = ({toggle}) => {
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+          <NavBtnLink to='/sign-up'>Sign Up</NavBtnLink>
         </NavBtn>
       </Nav>
     </>
