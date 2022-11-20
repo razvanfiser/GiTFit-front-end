@@ -17,10 +17,9 @@ export default function SignUpPage() {
   };
 
   return (
-    <div>
-      <div>
+    <div style={{backgroundColor: "#131F2B"}}>
+      <div style = {{display: "flex", justifyContent: "center", paddingTop: "5%", paddingBottom: "10%"}}>
         <SignUpElement/>
-        <div>OKK</div>
       </div>
     </div>
   );
