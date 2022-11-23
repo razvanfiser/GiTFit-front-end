@@ -68,7 +68,7 @@ export default function SignUpElement() {
               checked={checked}
               onChange={handleChange}
             /> 
-            <div style = {{position: "relative", marginTop: "3px", marginLeft: "40px"}}>I would like to sign up as a coach</div>
+            <div style = {{position: "relative", marginTop: "3px", marginLeft: "40px"}}>I would like to Sign Up as a coach</div>
           </div>
           <div className="formButton">
             <input type="submit" value="Go"/>
