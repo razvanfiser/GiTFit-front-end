@@ -19,29 +19,30 @@ const redirectSignUpPage = () => {
 }
 
   return (
+    
     <>
       <Nav>
         <Bars onClick={toggle}/>
         <NavLogo to='/about'>GiTFit</NavLogo>
         <NavMenu>
-          {/*<NavLink to='/about' activeStyle>
+        <NavLink to='/about' activeStyle>
             Main
           </NavLink>
-          <NavLink to='/progress' activeStyle>
-            Progress
+          <NavLink to='/clients' activeStyle>
+            Clients
           </NavLink>
-          <NavLink to='/chat' activeStyle>
-            Chat
+          <NavLink to='/payments' activeStyle>
+            Payments
           </NavLink>
-          <NavLink to='/user' activeStyle>
+          <NavLink to='/settings' activeStyle>
             Logged in <br/> Jacob Jones
-  </NavLink>*/}
+        </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
-        <NavBtn>
+        {/*<NavBtn>
           <NavBtnLink to='/sign-up'>Sign Up</NavBtnLink>
-        </NavBtn>
+        </NavBtn>*/}
       </Nav>
     </>
   );
