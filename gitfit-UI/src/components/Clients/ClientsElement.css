@@ -31,7 +31,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     background-color: #282D35;
     border-radius: 16px;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-left: 30px;
     padding-bottom: 20px;
 }
@@ -39,6 +39,7 @@
 .clientElement:hover {
     background-color: #4E5867;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .clientPhoto {

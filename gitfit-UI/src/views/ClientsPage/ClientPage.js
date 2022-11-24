@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Route} from "react-router-dom";
 
 import Navbar from "../../components/Navbar/navbar";
 import Sidebar from "../../components/Sidebar/sidebar";
-import ClientsElement from "../../components/Clients/ClientsElement"
+import ClientPageElement from "../../components/Client/ClientPageElement"
 
-export default function ClientsPage() {
+export default function ClientPage() {
 
     const[isOpen, setIsOpen] = useState(false);
   
@@ -24,8 +24,8 @@ export default function ClientsPage() {
             <Navbar/>
             <Sidebar/>
           </Route>
-          <div style = {{display: "flex", justifyContent: "center", paddingTop: "5%", paddingBottom: "15%"}}>
-            <ClientsElement/>
+          <div style = {{display: "flex", justifyContent: "center", paddingTop: "5%", paddingBottom: "30%"}}>
+            <ClientPageElement/>
           </div>
       </div>
     );

@@ -8,6 +8,8 @@ import Navbar from './components/Navbar/navbar.js';
 import AboutUsPage from "./views/AboutUsPage/AboutUsPage.js";
 import SignUpPage from './views/SignUpPage/SignUpPage.js';
 import ClientsPage from './views/ClientsPage/ClientsPage.js';
+import ClientPage from './views/ClientsPage/ClientPage.js';
+
 
 
 var hist = createBrowserHistory();
@@ -19,6 +21,7 @@ root.render(
       <Route path="/about" component={AboutUsPage} />
       <Route path="/sign-up" component={SignUpPage}/>
       <Route path='/clients' component={ClientsPage}/>
+      <Route path='/client' component={ClientPage}/>
       <Route path="/" component={AboutUsPage} />
     </Switch>
   </Router>,
