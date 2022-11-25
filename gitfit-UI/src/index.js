@@ -9,6 +9,8 @@ import AboutUsPage from "./views/AboutUsPage/AboutUsPage.js";
 import SignUpPage from './views/SignUpPage/SignUpPage.js';
 import ClientsPage from './views/ClientsPage/ClientsPage.js';
 import ClientPage from './views/ClientsPage/ClientPage.js';
+import SignInPage from './views/SignInPage/SignInPage';
+import LogInPage from './views/SignInPage/SignInPage';
 
 
 
@@ -22,7 +24,8 @@ root.render(
       <Route path="/sign-up" component={SignUpPage}/>
       <Route path='/clients' component={ClientsPage}/>
       <Route path='/client' component={ClientPage}/>
-      <Route path="/" component={AboutUsPage} />
+      <Route path='/sign-in' component={SignInPage}/>
+      <Route path="/" component={SignInPage} />
     </Switch>
   </Router>,
 );
